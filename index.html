@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Aji Angri Awan</title>
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background-color: white;
+        }
+
+
+        h1 {
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #0d6efd;
+        }
+
+        .navbar-light .navbar-brand {
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .col>img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .row {
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .col {
+            display: flex;
+            text-align: start;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .hero,
+        .portfolio {
+            background-color: beige;
+        }
+
+        #img-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #hero-description {
+            justify-content: left;
+        }
+
+        #about_data {
+            justify-content: left;
+        }
+
+        .title {
+            margin: 10px;
+        }
+
+        .portfolio,
+        .about,
+        .contact {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        td {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #0d6efd;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Aji Angri Awan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero" id="content_home">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col" id="hero-description">
+                        <h1>Website Developer</h1>
+                        <h1>Aji Angri Awan</h1>
+                        <p>Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi inovatif, dan itulah yang
+                            mendorong saya untuk mengejar keahlian dalam pengembangan web.</p>
+                        <a href="https://wa.me/+6287813233775">
+                            <button type="button" class="btn btn-primary">Hubungi Saya</button>
+                        </a>
+                    </div>
+                    <div class="col" id="img-hero">
+                        <img src="./images/aji.png" alt="ajiangriawan">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="content_about">
+            <div class="title">
+                <h1>About</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/aji1.png" alt="ajiangriawan" />
+                    </div>
+                    <div class="col" id="about_data">
+                        <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td>Aji Angri Awan</td>
+                            </tr>
+                            <tr>
+                                <td>Tempat / Tanggal Lahir</td>
+                                <td> :</td>
+                                <td>Talang Makmur / 19 September 2001</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td>Jl. R.E Martadinata, Palembang</td>
+                            </tr>
+                            <tr>
+                                <td>Pendidikan</td>
+                                <td>:</td>
+                                <td>S1 Sistem Informasi <br>(Institut Teknologi dan Bisnis Palembang)</td>
+                            </tr>
+                        </table>
+                        <p>Saya adalah Aji Angri Awan, seorang mahasiswa yang memiliki hasrat dan keahlian dalam
+                            pengembangan website. Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi
+                            inovatif, dan itulah yang mendorong saya untuk mengejar keahlian dalam pengembangan web.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" id="content_portfolio">
+            <div class="title">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/porto1.png" class="card-img-top" alt="porto1">
+                            <div class="card-body">
+                                <h5 class="card-title">Landing Page</h5>
+                                <p class="card-text">Project Landing Page untuk sebuah UMKM yang bergerak dibidang makanan atau jajanan tradisional.</p>
+                                <a href="https://queensha.infinityfreeapp.com/" class="btn btn-primary">Lihat Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/porto4.jpg" class="card-img-top" alt="porto1">
+                            <div class="card-body">
+                                <h5 class="card-title">Website Promosi</h5>
+                                <p class="card-text">Pembuatan Website Promosi penjualan mobil truck Hino dengan desain simple.</p>
+                                <a href="https://trukhinopalembang.com/" class="btn btn-primary">Lihat Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/porto2.jpg" class="card-img-top" alt="porto1">
+                            <div class="card-body">
+                                <h5 class="card-title">Company Website</h5>
+                                <p class="card-text">Project pembuatan Website untuk perusahaan dengan usaha dalam bidang layanan teknologi.</p>
+                                <a href="#" class="btn btn-primary">Lihat Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="content_contact">
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/WhatsApp_icon.png" class="card-img-top" alt="WhatsApp_icon">
+                            <div class="card-body">
+                                <a href="https://wa.me/+6287813233775">
+                                    <p class="card-text center">0878-1323-3775</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/Instagram-Icon.png" class="card-img-top" alt="WhatsApp_icon">
+                            <div class="card-body">
+                                <a href="https://www.instagram.com/ajiangriawan/">
+                                    <p class="card-text center">@ajiangriawan</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aji Angri Awan Portfolio<br /> All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
