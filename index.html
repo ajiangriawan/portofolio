@@ -57,6 +57,7 @@
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .hero,
@@ -85,7 +86,7 @@
         .portfolio,
         .about,
         .contact {
-            margin-top: 10px;
+            padding-bottom: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -96,9 +97,12 @@
             text-align: left;
         }
 
-        .center {
-            text-align: center;
-            font-weight: bold;
+        .card-img-top-contact {
+            width: 50%;
+        }
+
+        .card {
+            align-items: center;
         }
 
         footer {
@@ -132,16 +136,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#content_home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#content_about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#content_portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#content_contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -149,133 +153,178 @@
         </nav>
     </header>
     <main>
-        <div class="hero" id="content_home">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col" id="hero-description">
-                        <h1>Website Developer</h1>
-                        <h1>Aji Angri Awan</h1>
-                        <p>Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi inovatif, dan itulah yang
-                            mendorong saya untuk mengejar keahlian dalam pengembangan web.</p>
-                        <a href="https://wa.me/+6287813233775">
-                            <button type="button" class="btn btn-primary">Hubungi Saya</button>
-                        </a>
-                    </div>
-                    <div class="col" id="img-hero">
-                        <img src="./images/aji.png" alt="ajiangriawan">
+        <section id="content_home">
+            <div class="hero">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col" id="hero-description">
+                            <h1>Website Developer</h1>
+                            <h1>Aji Angri Awan</h1>
+                            <p>Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi inovatif, dan itulah
+                                yang
+                                mendorong saya untuk mengejar keahlian dalam pengembangan web.</p>
+                            <a href="https://drive.google.com/file/d/1EJuufCS1-qXdyDI1UN1FHx6N4-K0JAP1/view?usp=sharing">
+                                <button type="button" class="btn btn-primary">Unduh CV</button>
+                            </a>
+                        </div>
+                        <div class="col" id="img-hero">
+                            <img src="./images/aji.png" alt="ajiangriawan">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="about" id="content_about">
-            <div class="title">
-                <h1>About</h1>
-            </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <img src="./images/aji1.png" alt="ajiangriawan" />
-                    </div>
-                    <div class="col" id="about_data">
-                        <table>
-                            <tr>
-                                <td>Nama</td>
-                                <td>:</td>
-                                <td>Aji Angri Awan</td>
-                            </tr>
-                            <tr>
-                                <td>Tempat / Tanggal Lahir</td>
-                                <td> :</td>
-                                <td>Talang Makmur / 19 September 2001</td>
-                            </tr>
-                            <tr>
-                                <td>Alamat</td>
-                                <td>:</td>
-                                <td>Jl. R.E Martadinata, Palembang</td>
-                            </tr>
-                            <tr>
-                                <td>Pendidikan</td>
-                                <td>:</td>
-                                <td>S1 Sistem Informasi <br>(Institut Teknologi dan Bisnis Palembang)</td>
-                            </tr>
-                        </table>
-                        <p>Saya adalah Aji Angri Awan, seorang mahasiswa yang memiliki hasrat dan keahlian dalam
-                            pengembangan website. Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi
-                            inovatif, dan itulah yang mendorong saya untuk mengejar keahlian dalam pengembangan web.</p>
+        </section>
+        <section id="content_about">
+            <div class="about">
+                <div class="title">
+                    <h1>About</h1>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/aji1.png" alt="ajiangriawan" />
+                        </div>
+                        <div class="col" id="about_data">
+                            <table>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td>Aji Angri Awan</td>
+                                </tr>
+                                <tr>
+                                    <td>Tempat / Tanggal Lahir</td>
+                                    <td> :</td>
+                                    <td>Talang Makmur / 19 September 2001</td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td>:</td>
+                                    <td>Jl. R.E Martadinata, Palembang</td>
+                                </tr>
+                                <tr>
+                                    <td>Pendidikan</td>
+                                    <td>:</td>
+                                    <td>S1 Sistem Informasi <br>(Institut Teknologi dan Bisnis Palembang)</td>
+                                </tr>
+                            </table>
+                            <p>Saya adalah Aji Angri Awan, seorang mahasiswa yang memiliki hasrat dan keahlian dalam
+                                pengembangan website. Saya percaya bahwa teknologi adalah kunci untuk menciptakan solusi
+                                inovatif, dan itulah yang mendorong saya untuk mengejar keahlian dalam pengembangan web.
+                            </p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio" id="content_portfolio">
-            <div class="title">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/porto1.png" class="card-img-top" alt="porto1">
-                            <div class="card-body">
-                                <h5 class="card-title">Landing Page</h5>
-                                <p class="card-text">Project Landing Page untuk sebuah UMKM yang bergerak dibidang makanan atau jajanan tradisional.</p>
-                                <a href="https://queensha.infinityfreeapp.com/" class="btn btn-primary">Lihat Portfolio</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/porto4.jpg" class="card-img-top" alt="porto1">
-                            <div class="card-body">
-                                <h5 class="card-title">Website Promosi</h5>
-                                <p class="card-text">Pembuatan Website Promosi penjualan mobil truck Hino dengan desain simple.</p>
-                                <a href="https://trukhinopalembang.com/" class="btn btn-primary">Lihat Portfolio</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/porto2.jpg" class="card-img-top" alt="porto1">
-                            <div class="card-body">
-                                <h5 class="card-title">Company Website</h5>
-                                <p class="card-text">Project pembuatan Website untuk perusahaan dengan usaha dalam bidang layanan teknologi.</p>
-                                <a href="#" class="btn btn-primary">Lihat Portfolio</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contact" id="content_contact">
-            <div class="title">
-                <h1>Contact</h1>
-            </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/WhatsApp_icon.png" class="card-img-top" alt="WhatsApp_icon">
-                            <div class="card-body">
-                                <a href="https://wa.me/+6287813233775">
-                                    <p class="card-text center">0878-1323-3775</p>
-                                </a>
+        </section>
+        <section id="content_portfolio">
+            <div class="portfolio">
+                <div class="title">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/porto1.png" class="card-img-top" alt="porto1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Landing Page</h5>
+                                    <p class="card-text">Project Landing Page untuk sebuah UMKM yang bergerak dibidang
+                                        makanan atau jajanan tradisional.</p>
+                                    <a href="https://queensha.infinityfreeapp.com/" class="btn btn-primary">Lihat
+                                        Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/porto4.jpg" class="card-img-top" alt="porto1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Website Promosi</h5>
+                                    <p class="card-text">Pembuatan Website Promosi penjualan mobil truck Hino dengan
+                                        desain
+                                        simple.</p>
+                                    <a href="https://trukhinopalembang.com/" class="btn btn-primary">Lihat Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/porto2.jpg" class="card-img-top" alt="porto1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Company Website</h5>
+                                    <p class="card-text">Project pembuatan Website untuk perusahaan dengan usaha dalam
+                                        bidang layanan teknologi.</p>
+                                    <a href="#" class="btn btn-primary">Lihat Portfolio</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./images/Instagram-Icon.png" class="card-img-top" alt="WhatsApp_icon">
-                            <div class="card-body">
-                                <a href="https://www.instagram.com/ajiangriawan/">
-                                    <p class="card-text center">@ajiangriawan</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="content_contact">
+            <div class="contact" id="content_contact">
+                <div class="title">
+                    <h1>Contact</h1>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <a href="mailto:ajiangriawan6@gmail.com">
+                                <div class="card mb-3" style="max-width: 350px;">
+                                    <div class="col g-0">
+                                        <div class="col-md-3" style="padding: 5px;">
+                                            <img src="./images/GMail New Icon.png" class="img-fluid rounded-start"
+                                                alt="GMail-logo">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6 class="card-title">ajiangriawan6@gmail.com</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://wa.me/+6287813233775">
+                                <div class="card mb-3" style="max-width: 350px;">
+                                    <div class="col g-0">
+                                        <div class="col-md-3" style="padding: 5px;">
+                                            <img src="./images/WhatsApp_icon.png" class="img-fluid rounded-start"
+                                                alt="WhatsApp_icon">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6 class="card-title">0878-1323-3775</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.instagram.com/ajiangriawan/">
+                                <div class="card mb-3" style="max-width: 350px;">
+                                    <div class="col g-0">
+                                        <div class="col-md-3" style="padding: 5px;">
+                                            <img src="./images/Instagram-Icon.png" class="img-fluid rounded-start"
+                                                alt="Instagram-Icon">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6 class="card-title">@ajiangriawan</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Aji Angri Awan Portfolio<br /> All rights reserved.</p>
